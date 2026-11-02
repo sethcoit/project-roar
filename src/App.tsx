@@ -1,0 +1,62 @@
+import { ModalProvider } from '@/context/ModalContext';
+import { SiteHeader } from '@/components/SiteHeader';
+import { Hero } from '@/components/Hero';
+import { Opportunity } from '@/components/Opportunity';
+import { Credibility } from '@/components/Credibility';
+import { FoundingClient } from '@/components/FoundingClient';
+import { Method } from '@/components/Method';
+import { Audit } from '@/components/Audit';
+import { Fractional } from '@/components/Fractional';
+import { Path } from '@/components/Path';
+import { AboutFounder } from '@/components/AboutFounder';
+import { Industries } from '@/components/Industries';
+import { FinalCTA } from '@/components/FinalCTA';
+import { NewsletterSignup } from '@/components/NewsletterSignup';
+import { FAQ } from '@/components/FAQ';
+import { Footer } from '@/components/Footer';
+import { StickyCTA } from '@/components/StickyCTA';
+import { ContactModal } from '@/components/ContactModal';
+import { Legal } from '@/components/Legal';
+import { CaseStudies } from '@/components/CaseStudies';
+import { useRoute } from '@/hooks/useRoute';
+import { useSEO } from '@/hooks/useSEO';
+
+function App() {
+  const route = useRoute();
+  const isSubpage = route.name === 'legal' || route.name === 'case-studies';
+  useSEO(route);
+
+  return (
+    <ModalProvider>
+      <SiteHeader onSubpage={isSubpage} />
+      <main aria-label="Main content">
+        {route.name === 'legal' ? (
+          <Legal activeSection={route.section} />
+        ) : route.name === 'case-studies' ? (
+          <CaseStudies />
+        ) : (
+          <>
+            <Hero />
+            <Opportunity />
+            <Credibility />
+            <FoundingClient />
+            <Method />
+            <Audit />
+            <Fractional />
+            <Path />
+            <AboutFounder />
+            <Industries />
+            <FAQ />
+            <NewsletterSignup />
+            <FinalCTA />
+          </>
+        )}
+      </main>
+      <Footer />
+      {!isSubpage && <StickyCTA />}
+      <ContactModal />
+    </ModalProvider>
+  );
+}
+
+export default App;

@@ -5,6 +5,10 @@ export interface ConsultationRequest {
   email: string;
   message?: string;
   source?: string;
+  industry?: string;
+  clientBookSize?: string;
+  crmSystem?: string;
+  timeline?: string;
 }
 
 export async function submitConsultationRequest(
@@ -15,6 +19,10 @@ export async function submitConsultationRequest(
     email: data.email,
     message: data.message ?? null,
     source: data.source ?? null,
+    industry: data.industry ?? null,
+    client_book_size: data.clientBookSize ?? null,
+    crm_system: data.crmSystem ?? null,
+    timeline: data.timeline ?? null,
   });
 
   if (error) {

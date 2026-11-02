@@ -3,14 +3,14 @@ import type { Route } from '@/hooks/useRoute';
 
 const metadata: Record<string, { title: string; description: string }> = {
   home: {
-    title: 'Magnolia Loop — Where Client Relationships Become Revenue',
+    title: 'Clienteling Consulting & Revenue Audits | Magnolia Loop',
     description:
-      'Turn existing client relationships into measurable revenue. Magnolia Loop delivers clienteling revenue audits and fractional leadership for luxury and relationship-driven businesses.'
+      'Founder-led clienteling for luxury and relationship-driven businesses. A fixed-price audit finds the revenue already in your client book.'
   },
   'case-studies': {
-    title: 'Case Studies — Magnolia Loop',
+    title: 'Example Engagements — Magnolia Loop',
     description:
-      'Real engagements with luxury and relationship-driven businesses. See how Magnolia Loop turned dormant client relationships into measurable revenue through clienteling audits and fractional director services.',
+      'Three common clienteling situations in luxury retail — dormant clients, VIP knowledge held by individual associates, and boutiques without a system — and how Magnolia Loop approaches each one.',
   },
   'legal-terms': {
     title: 'Terms of Service — Magnolia Loop',
@@ -49,17 +49,5 @@ export function useSEO(route: Route) {
 
     const descTag = document.querySelector('meta[name="description"]');
     if (descTag) descTag.setAttribute('content', meta.description);
-
-    const ogTitleTag = document.querySelector('meta[property="og:title"]');
-    if (ogTitleTag) ogTitleTag.setAttribute('content', meta.title);
-
-    const ogDescTag = document.querySelector('meta[property="og:description"]');
-    if (ogDescTag) ogDescTag.setAttribute('content', meta.description);
-
-    const twTitleTag = document.querySelector('meta[name="twitter:title"]');
-    if (twTitleTag) twTitleTag.setAttribute('content', meta.title);
-
-    const twDescTag = document.querySelector('meta[name="twitter:description"]');
-    if (twDescTag) twDescTag.setAttribute('content', meta.description);
   }, [meta.title, meta.description]);
 }

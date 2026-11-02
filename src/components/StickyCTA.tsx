@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
+import { foundingOffer, foundingSpotsOpen } from '@/lib/foundingOffer';
 
 const variants = [
   {
@@ -8,11 +9,17 @@ const variants = [
     cta: 'Schedule a Strategy Call',
     source: 'Schedule a Strategy Call',
   },
-  {
-    eyebrow: 'Clienteling Revenue Audit',
-    cta: 'Book the $995 Audit',
-    source: 'Sticky CTA — Book the Audit',
-  },
+  foundingSpotsOpen
+    ? {
+        eyebrow: `Founding Clients · ${foundingOffer.spotsRemaining} of ${foundingOffer.totalSpots} open`,
+        cta: `Apply for a Founding Spot · ${foundingOffer.foundingPrice}`,
+        source: 'Founding Client — Apply',
+      }
+    : {
+        eyebrow: 'Clienteling Revenue Audit',
+        cta: `Book the ${foundingOffer.standardPrice} Audit`,
+        source: 'Sticky CTA — Book the Audit',
+      },
 ];
 
 export function StickyCTA() {

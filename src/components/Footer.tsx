@@ -3,7 +3,7 @@ import { Mail, Linkedin } from 'lucide-react';
 import { NewsletterSignup } from '@/components/NewsletterSignup';
 
 const siteLinks = [
-  { label: 'Case Studies', hash: '#/case-studies' },
+  { label: 'Example Engagements', hash: '#/case-studies' },
   { label: 'Terms of Service', hash: '#/legal/terms' },
   { label: 'Privacy Policy', hash: '#/legal/privacy' },
   { label: 'Accessibility', hash: '#/legal/accessibility' },
@@ -25,7 +25,7 @@ export function Footer() {
   const socials = [
     {
       key: 'email',
-      href: 'mailto:hello@magnolialoop.com',
+      href: 'mailto:hello@magnolia-loop.com',
       label: 'Email',
       icon: Mail,
     },
@@ -57,7 +57,7 @@ export function Footer() {
             </span>
 
             <a
-              href="mailto:hello@magnolialoop.com"
+              href="mailto:hello@magnolia-loop.com"
               className="group inline-flex items-center gap-[10px] text-[13px] normal-case tracking-normal transition-colors duration-200"
             >
               <Mail
@@ -72,7 +72,7 @@ export function Footer() {
                 onMouseEnter={() => setSocialHover('email')}
                 onMouseLeave={() => setSocialHover(null)}
               >
-                hello@magnolialoop.com
+                hello@magnolia-loop.com
               </span>
             </a>
           </div>

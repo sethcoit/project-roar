@@ -1,6 +1,12 @@
+const signs = [
+  'Clients who have not heard from you in a year — and have not been missed by anyone on the team.',
+  'Follow-up that depends on which associate happens to be working that day.',
+  'VIPs everyone recognizes, but no one has formally identified or planned around.',
+];
+
 export function Opportunity() {
   return (
-    <section className="relative overflow-hidden bg-ink px-0 py-[128px] text-bone">
+    <section id="opportunity" className="relative overflow-hidden bg-ink px-0 py-[128px] text-bone">
       <div className="relative z-10 mx-auto grid w-full max-w-site grid-cols-1 items-end gap-[80px] px-6 md:grid-cols-2">
         <div>
           <div className="flex items-center gap-3 text-[12px] font-bold uppercase tracking-eyebrow text-brass">
@@ -16,38 +22,14 @@ export function Opportunity() {
             Dormant clients, inconsistent follow-up, incomplete profiles and unclear VIP priorities can
             obscure revenue inside relationships the business has already earned.
           </p>
-          <div className="mt-[36px] grid grid-cols-3 gap-[12px] sm:grid-cols-3">
-            <div className="group overflow-hidden rounded-[14px] border border-bone/10">
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/8387126/pexels-photo-8387126.jpeg?auto=compress&cs=tinysrgb&h=400&w=400"
-                  alt="Client relationship in a luxury boutique"
-                  className="h-full w-full object-cover opacity-[0.55] transition-all duration-500 group-hover:scale-110 group-hover:opacity-90"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div className="group overflow-hidden rounded-[14px] border border-bone/10">
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/8439695/pexels-photo-8439695.jpeg?auto=compress&cs=tinysrgb&h=400&w=400"
-                  alt="Business partnership sealed with a handshake"
-                  className="h-full w-full object-cover opacity-[0.55] transition-all duration-500 group-hover:scale-110 group-hover:opacity-90"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div className="group overflow-hidden rounded-[14px] border border-bone/10">
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/20858950/pexels-photo-20858950.jpeg?auto=compress&cs=tinysrgb&h=400&w=400"
-                  alt="Fine jewelry on display"
-                  className="h-full w-full object-cover opacity-[0.55] transition-all duration-500 group-hover:scale-110 group-hover:opacity-90"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
+          <ol className="mt-[36px] border-t border-bone/12">
+            {signs.map((sign, i) => (
+              <li key={sign} className="flex gap-[20px] border-b border-bone/12 py-[20px]">
+                <span className="font-serif text-[22px] leading-none text-brass">0{i + 1}</span>
+                <span className="text-[15px] leading-[1.6] text-bone/85">{sign}</span>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>

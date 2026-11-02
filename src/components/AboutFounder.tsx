@@ -24,26 +24,24 @@ export function AboutFounder() {
             About the Founder
           </div>
           <h2 className="mt-[22px] max-w-[760px] font-serif text-[clamp(50px,6.5vw,94px)] leading-[0.93] tracking-[-0.05em]">
-            The person behind the loop.
+            I built Magnolia Loop from the sales floor.
           </h2>
 
           <div className="mt-[38px] max-w-[700px] space-y-[22px] text-[15px] leading-[1.85] text-ink/75">
             <p>
-              Seth Coit is the Founder and Chief Executive Officer of Magnolia Loop, a client relationship
-              revenue consultancy focused on helping luxury and relationship-driven businesses create more
-              value from the customers they already have.
+              I&apos;m Seth Coit. Before Magnolia Loop, I worked in luxury client relations and sales
+              leadership at Hermès and Indochino — managing high-volume client interactions, supporting VIP
+              clientele, driving sales growth, and coaching teams on clienteling and service excellence.
             </p>
             <p>
-              While working in luxury client relations and sales leadership roles, Seth managed high-volume
-              client interactions, supported VIP clientele, drove sales growth, and coached teams on
-              clienteling and service excellence. At organizations including Hermès and Indochino, he saw
-              firsthand how valuable client knowledge is often fragmented across systems or retained only in
-              employee memory. That observation became the foundation for Magnolia Loop.
+              In both places I saw the same thing: the most valuable knowledge a business has about its
+              clients was scattered across systems, or kept only in an associate&apos;s memory. The
+              relationships were there. The system to act on them was not.
             </p>
             <p>
-              Magnolia Loop exists to help businesses preserve relationship knowledge, improve retention,
-              identify revenue opportunities, and build systems that turn personalized service into measurable
-              commercial outcomes.
+              I started Magnolia Loop to build that system — to help businesses preserve what they know
+              about their clients, act on it consistently, and turn personalized service into measurable
+              revenue. When you work with Magnolia Loop, you work with me.
             </p>
           </div>
 

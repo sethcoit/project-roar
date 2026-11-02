@@ -2,7 +2,7 @@ const steps = [
   {
     num: '01',
     name: 'Audit',
-    desc: 'The $995 Clienteling Revenue Audit reveals exactly where relationship-driven revenue is hiding in your client book.',
+    desc: 'The Clienteling Revenue Audit reveals exactly where relationship-driven revenue is hiding in your client book.',
   cta: 'Book the Audit',
   href: '#audit',
   },

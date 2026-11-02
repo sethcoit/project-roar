@@ -41,7 +41,7 @@ export function Fractional() {
         <article className="rounded-[30px] border border-ink/8 bg-ink p-[38px] text-bone shadow-[0_24px_70px_rgba(7,22,51,0.18)]">
           <div className="text-[12px] font-bold uppercase tracking-nav text-brass">Starting at</div>
           <div className="my-[10px] font-serif text-[58px] leading-none">
-            $1,500–$3,000<span className="text-[24px]">/mo</span>
+            $1,500<span className="text-[24px]">/mo</span>
           </div>
           {features.map((feature) => (
             <div

@@ -1,5 +1,6 @@
 import { useModal } from '@/context/ModalContext';
 import { ChevronDown } from 'lucide-react';
+import { foundingOffer, foundingSpotsOpen } from '@/lib/foundingOffer';
 
 export function Hero() {
   const { openModal } = useModal();
@@ -48,23 +49,51 @@ export function Hero() {
           <p className="mb-[29px] text-[15px] leading-[1.75] text-bone/80">
             Turn the relationships you already have into revenue you have not captured yet.
           </p>
-          <button
-            onClick={() => openModal('Book the $995 Audit')}
-            className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-brass px-[25px] text-[12px] font-bold uppercase tracking-nav text-ink shadow-[0_12px_26px_rgba(183,121,10,0.28)] transition hover:-translate-y-px hover:bg-parchment sm:w-auto"
-          >
-            Book the $995 Audit →
-          </button>
+          {foundingSpotsOpen ? (
+            <a
+              href="#founding-client"
+              className="inline-flex min-h-[52px] w-full items-center justify-center whitespace-nowrap rounded-full bg-brass px-[20px] text-[12px] font-bold uppercase tracking-[0.1em] text-ink shadow-[0_12px_26px_rgba(183,121,10,0.28)] transition hover:-translate-y-px hover:bg-parchment sm:w-auto"
+            >
+              Apply for a Founding Spot · {foundingOffer.foundingPrice} →
+            </a>
+          ) : (
+            <button
+              onClick={() => openModal(`Book the ${foundingOffer.standardPrice} Audit`)}
+              className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-brass px-[25px] text-[12px] font-bold uppercase tracking-nav text-ink shadow-[0_12px_26px_rgba(183,121,10,0.28)] transition hover:-translate-y-px hover:bg-parchment sm:w-auto"
+            >
+              Book the {foundingOffer.standardPrice} Audit →
+            </button>
+          )}
           <a
             href="#method"
             className="mt-[16px] inline-flex min-h-[44px] items-center justify-center text-[12px] font-bold uppercase tracking-nav text-bone/75 transition hover:text-brass sm:ml-[18px] sm:mt-0"
           >
             See the method <span className="ml-2" aria-hidden="true">↓</span>
           </a>
+
+          <a
+            href="#founder"
+            className="group mt-[32px] flex items-center gap-[14px] border-t border-bone/15 pt-[22px]"
+          >
+            <img
+              src="/images/team/image.png"
+              alt="Seth Coit"
+              className="h-[52px] w-[52px] rounded-full border border-brass/50 object-cover object-top"
+            />
+            <span>
+              <span className="block text-[14px] text-bone transition-colors group-hover:text-brass">
+                Led personally by Seth Coit
+              </span>
+              <span className="mt-[3px] block text-[11px] font-bold uppercase tracking-nav text-bone/55">
+                Luxury clienteling at Hermès &amp; Indochino
+              </span>
+            </span>
+          </a>
         </div>
       </div>
 
       <a
-        href="#opportunity"
+        href="#founder"
         className="absolute bottom-[28px] left-1/2 z-10 -translate-x-1/2 text-bone/60 transition-colors hover:text-brass"
         aria-label="Scroll to explore"
       >

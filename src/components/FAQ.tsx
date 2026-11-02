@@ -5,35 +5,35 @@ import { useModal } from '@/context/ModalContext';
 const faqs = [
   {
     q: 'How does the Clienteling Revenue Audit work?',
-    a: 'After you book, we schedule a 30-minute discovery call to understand your business, your client base, and your current systems. You share access to whatever client data you have — CRM exports, POS reports, spreadsheets, or even associate notes. Within two weeks, you receive a written audit with a Clienteling Scorecard, a Revenue Opportunity Analysis, a VIP and dormant client review, a 90-day action plan, and ready-to-use outreach templates. We walk through it together on a follow-up call.',
+    a: 'After you book, I set up a 30-minute discovery call to understand your business, your client base, and your current systems. You share access to whatever client data you have — CRM exports, POS reports, spreadsheets, or even associate notes. Within two weeks, you receive a written audit with a Clienteling Scorecard, a Revenue Opportunity Analysis, a VIP and dormant client review, a 90-day action plan, and ready-to-use outreach templates. We walk through it together on a follow-up call.',
   },
   {
     q: 'What do you need from us to get started?',
-    a: 'For the audit, we need whatever client data you can provide — even if it is messy or incomplete. Common sources include your POS or CRM export, a client list with purchase history, and any notes your team keeps on key clients. If your data is fragmented, that is exactly what we help you identify and fix. You do not need a polished database to begin.',
+    a: 'For the audit, I need whatever client data you can provide — even if it is messy or incomplete. Common sources include your POS or CRM export, a client list with purchase history, and any notes your team keeps on key clients. If your data is fragmented, that is exactly what I help you identify and fix. You do not need a polished database to begin.',
   },
   {
     q: 'Is the fractional director engagement month-to-month?',
-    a: 'Yes. The fractional Clienteling Director engagement runs on a month-to-month basis with no long-term contract. Most clients engage for a minimum of three months to see meaningful results, but you can adjust scope or pause with 30 days notice. Pricing scales with the depth of involvement — from monthly performance reviews at the entry level to weekly strategic leadership at the higher end.',
+    a: 'Yes. The fractional Clienteling Director engagement runs on a month-to-month basis with no long-term contract. I recommend a minimum of three months to see meaningful results, but you can adjust scope or pause with 30 days notice. Pricing scales with the depth of involvement — from monthly performance reviews at the entry level to weekly strategic leadership at the higher end.',
   },
   {
     q: 'What industries do you work with?',
-    a: 'We specialize in relationship-driven businesses where the customer lifetime value is high and personal service matters: fashion, jewelry, watches, interiors, transportation, real estate, hospitality, medical, and high-end services. If your revenue depends on repeat purchases, referrals, or long-term client relationships, the Magnolia Loop Method applies.',
+    a: 'I work with relationship-driven businesses where the customer lifetime value is high and personal service matters: fashion, jewelry, watches, automotive dealerships, interior design firms, real estate brokerages, plastic surgery and aesthetic practices, hospitality and private member services, yacht and aviation brokers, and bakeries and restaurants. If your revenue depends on repeat purchases, referrals, or long-term client relationships, the Magnolia Loop Method applies.',
   },
   {
     q: 'What if we do not have a CRM or client database?',
-    a: 'That is common and completely fine. Many of our clients start with scattered spreadsheets, POS exports, or knowledge that lives only in their team\'s memory. Part of the audit includes recommending a lightweight clienteling setup that your team can actually maintain — whether that means configuring a simple CRM, building a structured spreadsheet, or improving an existing system.',
+    a: 'That is common and completely fine. Most businesses I speak with start with scattered spreadsheets, POS exports, or knowledge that lives only in their team\'s memory. Part of the audit includes recommending a lightweight clienteling setup that your team can actually maintain — whether that means configuring a simple CRM, building a structured spreadsheet, or improving an existing system.',
   },
   {
     q: 'How quickly can we expect to see results?',
-    a: 'Most clients see their first measurable revenue lift within 90 days of implementing the audit recommendations. The timeline depends on your client base size, how quickly your team adopts the outreach cadence, and the dormancy level of your existing relationships. The fractional director engagement compounds these results over time through monthly accountability and refinement.',
+    a: 'The 90-day action plan is built so your team can act on the highest-value opportunities first. How quickly revenue follows depends on your client base size, how quickly your team adopts the outreach cadence, and the dormancy level of your existing relationships. The fractional director engagement compounds these results over time through monthly accountability and refinement.',
   },
   {
     q: 'Do you work with businesses outside the luxury sector?',
-    a: 'Our methodology is built for businesses where relationships drive revenue, which extends beyond traditional luxury. We have applied the Magnolia Loop Method to professional services, specialty medical practices, and boutique hospitality. If you are unsure whether it fits, book a consultation and we will tell you honestly whether we can help.',
+    a: 'The Magnolia Loop Method is built for businesses where relationships drive revenue, which extends beyond traditional luxury — to bakeries and restaurants with loyal regulars, professional services, and boutique hospitality. If you are unsure whether it fits, book a consultation and I will tell you honestly whether I can help.',
   },
   {
     q: 'What happens after the audit?',
-    a: 'The audit is designed to be actionable on its own — many clients implement the 90-day plan with their own team. If you want ongoing strategic leadership, the natural next step is the fractional Clienteling Director engagement, where we provide monthly accountability, performance reviews, and continued refinement. There is no obligation to continue; the audit stands alone as a complete deliverable.',
+    a: 'The audit is designed to be actionable on its own — you can implement the 90-day plan with their own team. If you want ongoing strategic leadership, the natural next step is the fractional Clienteling Director engagement, where I provide monthly accountability, performance reviews, and continued refinement. There is no obligation to continue; the audit stands alone as a complete deliverable.',
   },
 ];
 
@@ -55,8 +55,8 @@ export function FAQ() {
             </h2>
           </div>
           <p className="max-w-[480px] text-[15px] leading-[1.8] text-ink/72">
-            The most common questions we hear from founders and operators considering the audit
-            or the fractional director engagement. If yours is not here, reach out and we will
+            The most common questions I hear from founders and operators considering the audit
+            or the fractional director engagement. If yours is not here, reach out and I will
             answer it directly.
           </p>
         </div>
@@ -109,7 +109,7 @@ export function FAQ() {
               Still have a question?
             </h3>
             <p className="mt-[10px] max-w-[420px] text-[15px] leading-[1.7] text-ink/70">
-              We are happy to answer anything specific to your business. No pressure, no sales pitch.
+              I am happy to answer anything specific to your business. No pressure, no sales pitch.
             </p>
           </div>
           <button

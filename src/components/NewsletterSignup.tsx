@@ -118,7 +118,7 @@ export function NewsletterSignup({ source = 'Homepage Lead Magnet', variant = 's
                 You're already subscribed.
               </h3>
               <p className="text-[14px] leading-[1.7] text-ink/70">
-                We'll be in touch with the next issue. No need to sign up again.
+                You will receive the next issue as soon as it is out. No need to sign up again.
               </p>
             </div>
           ) : (

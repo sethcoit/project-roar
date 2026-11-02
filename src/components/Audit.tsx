@@ -1,5 +1,6 @@
 import { Check } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
+import { foundingOffer, foundingSpotsOpen } from '@/lib/foundingOffer';
 
 const features = [
   'Clienteling Scorecard',
@@ -55,7 +56,7 @@ export function Audit() {
 
         <article className="rounded-[30px] border border-ink/8 bg-bone p-[38px] shadow-[0_24px_70px_rgba(7,22,51,0.1)] transition-transform duration-300 hover:-translate-y-1">
           <div className="text-[12px] font-bold uppercase tracking-nav text-brass">Fixed investment</div>
-          <div className="my-[10px] font-serif text-[72px] leading-none">$995</div>
+          <div className="my-[10px] font-serif text-[72px] leading-none">{foundingOffer.standardPrice}</div>
           <p className="mb-[22px] max-w-[300px] text-[13px] leading-[1.6] text-ink/65">
             A complete revenue opportunity review, delivered within two weeks, with a plan your team can use immediately.
           </p>
@@ -77,6 +78,14 @@ export function Audit() {
           >
             Book the Audit →
           </button>
+          {foundingSpotsOpen && (
+            <a
+              href="#founding-client"
+              className="mt-[14px] block text-center text-[12px] font-bold uppercase tracking-nav text-green transition-colors hover:text-brass"
+            >
+              Founding clients: {foundingOffer.foundingPrice} · {foundingOffer.spotsRemaining} spots left →
+            </a>
+          )}
         </article>
         </div>
 

@@ -2,10 +2,12 @@ import { ModalProvider } from '@/context/ModalContext';
 import { SiteHeader } from '@/components/SiteHeader';
 import { Hero } from '@/components/Hero';
 import { Opportunity } from '@/components/Opportunity';
-import { Credibility } from '@/components/Credibility';
-import { FoundingClient } from '@/components/FoundingClient';
+import { FoundingClient, hasFoundingCaseStudy } from '@/components/FoundingClient';
+import { FoundingOffer } from '@/components/FoundingOffer';
+import { DormantRevenueCalculator } from '@/components/DormantRevenueCalculator';
 import { Method } from '@/components/Method';
 import { Audit } from '@/components/Audit';
+import { AuditSample } from '@/components/AuditSample';
 import { Fractional } from '@/components/Fractional';
 import { Path } from '@/components/Path';
 import { AboutFounder } from '@/components/AboutFounder';
@@ -37,14 +39,15 @@ function App() {
         ) : (
           <>
             <Hero />
+            <AboutFounder />
             <Opportunity />
-            <Credibility />
-            <FoundingClient />
+            <DormantRevenueCalculator />
+            {hasFoundingCaseStudy ? <FoundingClient /> : <FoundingOffer />}
             <Method />
             <Audit />
+            <AuditSample />
             <Fractional />
             <Path />
-            <AboutFounder />
             <Industries />
             <FAQ />
             <NewsletterSignup />

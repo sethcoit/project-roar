@@ -221,10 +221,10 @@ export function Legal({ activeSection }: LegalProps) {
               <p className="mt-[10px] text-[15px] leading-[1.8] text-ink/75">
                 If you have any questions about these policies, please contact us at{' '}
                 <a
-                  href="mailto:hello@magnolialoop.com"
+                  href="mailto:hello@magnolia-loop.com"
                   className="font-bold text-brass underline-offset-4 hover:underline"
                 >
-                  hello@magnolialoop.com
+                  hello@magnolia-loop.com
                 </a>
                 . We will respond within one business day.
               </p>

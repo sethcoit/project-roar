@@ -8,11 +8,11 @@ const sections = [
     body: [
       {
         heading: 'Acceptance of Terms',
-        text: 'By accessing or using the Magnolia Loop website and our consulting services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website or services.',
+        text: 'By accessing or using the MagnoliaLoop website and our consulting services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website or services.',
       },
       {
         heading: 'Description of Services',
-        text: 'Magnolia Loop provides client relationship revenue consulting, including but not limited to clienteling revenue audits, fractional clienteling director services, and strategic advisory engagements. All services are described on our website and confirmed in individual engagement agreements.',
+        text: 'MagnoliaLoop provides client relationship revenue consulting, including but not limited to clienteling revenue audits, fractional clienteling director services, and strategic advisory engagements. All services are described on our website and confirmed in individual engagement agreements.',
       },
       {
         heading: 'Engagement Agreements',
@@ -24,7 +24,7 @@ const sections = [
       },
       {
         heading: 'Intellectual Property',
-        text: 'All content on this website, including text, graphics, logos, the Magnolia Loop name, the Magnolia Loop Method™, and the Magnolia Loop logo, is the property of Magnolia Loop and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without prior written consent.',
+        text: 'All content on this website, including text, graphics, logos, the MagnoliaLoop name, the MagnoliaLoop Method™, and the MagnoliaLoop logo, is the property of MagnoliaLoop and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without prior written consent.',
       },
       {
         heading: 'Client Confidentiality',
@@ -32,7 +32,7 @@ const sections = [
       },
       {
         heading: 'Limitation of Liability',
-        text: 'Magnolia Loop provides consulting services on an "as is" basis. We do not guarantee specific revenue outcomes, as results depend on many factors beyond our control, including client implementation and market conditions. To the fullest extent permitted by law, Magnolia Loop shall not be liable for any indirect, incidental, consequential, or punitive damages arising from the use of our services or website.',
+        text: 'MagnoliaLoop provides consulting services on an "as is" basis. We do not guarantee specific revenue outcomes, as results depend on many factors beyond our control, including client implementation and market conditions. To the fullest extent permitted by law, MagnoliaLoop shall not be liable for any indirect, incidental, consequential, or punitive damages arising from the use of our services or website.',
       },
       {
         heading: 'Third-Party Links',
@@ -44,7 +44,7 @@ const sections = [
       },
       {
         heading: 'Governing Law',
-        text: 'These Terms are governed by the laws of the jurisdiction in which Magnolia Loop is registered, without regard to conflict of law principles. Any disputes shall be resolved in the courts of that jurisdiction.',
+        text: 'These Terms are governed by the laws of the jurisdiction in which MagnoliaLoop is registered, without regard to conflict of law principles. Any disputes shall be resolved in the courts of that jurisdiction.',
       },
     ],
   },
@@ -98,7 +98,7 @@ const sections = [
     body: [
       {
         heading: 'Our Commitment',
-        text: 'Magnolia Loop is committed to making our website accessible to everyone, including individuals with disabilities. We strive to meet recognized accessibility standards and continually improve the user experience for all visitors.',
+        text: 'MagnoliaLoop is committed to making our website accessible to everyone, including individuals with disabilities. We strive to meet recognized accessibility standards and continually improve the user experience for all visitors.',
       },
       {
         heading: 'Conformance Status',
@@ -162,7 +162,7 @@ export function Legal({ activeSection }: LegalProps) {
             Legal &amp; Policies
           </h1>
           <p className="mt-[20px] max-w-[640px] text-[15px] leading-[1.8] text-ink/72">
-            The policies below outline how Magnolia Loop operates, how we handle your information,
+            The policies below outline how MagnoliaLoop operates, how we handle your information,
             and the terms that govern use of our website and services.
           </p>
         </div>

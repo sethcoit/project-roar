@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'What industries do you work with?',
-    a: 'I work with relationship-driven businesses where the customer lifetime value is high and personal service matters: fashion, jewelry, watches, automotive dealerships, interior design firms, real estate brokerages, plastic surgery and aesthetic practices, hospitality and private member services, yacht and aviation brokers, and bakeries and restaurants. If your revenue depends on repeat purchases, referrals, or long-term client relationships, the Magnolia Loop Method applies.',
+    a: 'I work with relationship-driven businesses where the customer lifetime value is high and personal service matters: fashion, jewelry, watches, automotive dealerships, interior design firms, real estate brokerages, plastic surgery and aesthetic practices, hospitality and private member services, yacht and aviation brokers, and bakeries and restaurants. If your revenue depends on repeat purchases, referrals, or long-term client relationships, the MagnoliaLoop Method applies.',
   },
   {
     q: 'What if we do not have a CRM or client database?',
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: 'Do you work with businesses outside the luxury sector?',
-    a: 'The Magnolia Loop Method is built for businesses where relationships drive revenue, which extends beyond traditional luxury — to bakeries and restaurants with loyal regulars, professional services, and boutique hospitality. If you are unsure whether it fits, book a consultation and I will tell you honestly whether I can help.',
+    a: 'The MagnoliaLoop Method is built for businesses where relationships drive revenue, which extends beyond traditional luxury — to bakeries and restaurants with loyal regulars, professional services, and boutique hospitality. If you are unsure whether it fits, book a consultation and I will tell you honestly whether I can help.',
   },
   {
     q: 'What happens after the audit?',

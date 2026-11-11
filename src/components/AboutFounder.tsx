@@ -8,7 +8,7 @@ export function AboutFounder() {
           <div className="relative aspect-[3/4] overflow-hidden bg-parchment">
             <img
               src="/images/team/image.png"
-              alt="Seth Coit, Founder and Chief Executive Officer of Magnolia Loop"
+              alt="Seth Coit, Founder and Chief Executive Officer of MagnoliaLoop"
               className="h-full w-full object-cover object-top grayscale-[12%] transition duration-700 hover:scale-[1.02]"
             />
           </div>
@@ -24,12 +24,12 @@ export function AboutFounder() {
             About the Founder
           </div>
           <h2 className="mt-[22px] max-w-[760px] font-serif text-[clamp(50px,6.5vw,94px)] leading-[0.93] tracking-[-0.05em]">
-            I built Magnolia Loop from the sales floor.
+            I built MagnoliaLoop from the sales floor.
           </h2>
 
           <div className="mt-[38px] max-w-[700px] space-y-[22px] text-[15px] leading-[1.85] text-ink/75">
             <p>
-              I&apos;m Seth Coit. Before Magnolia Loop, I worked in luxury client relations and sales
+              I&apos;m Seth Coit. Before MagnoliaLoop, I worked in luxury client relations and sales
               leadership at Hermès and Indochino — managing high-volume client interactions, supporting VIP
               clientele, driving sales growth, and coaching teams on clienteling and service excellence.
             </p>
@@ -39,9 +39,9 @@ export function AboutFounder() {
               relationships were there. The system to act on them was not.
             </p>
             <p>
-              I started Magnolia Loop to build that system — to help businesses preserve what they know
+              I started MagnoliaLoop to build that system — to help businesses preserve what they know
               about their clients, act on it consistently, and turn personalized service into measurable
-              revenue. When you work with Magnolia Loop, you work with me.
+              revenue. When you work with MagnoliaLoop, you work with me.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export function AboutFounder() {
           </blockquote>
 
           <div className="mt-[28px] text-[12px] font-bold uppercase tracking-nav text-ink/60">
-            The Magnolia Loop philosophy
+            The MagnoliaLoop philosophy
           </div>
         </div>
       </div>

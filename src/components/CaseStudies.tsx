@@ -225,7 +225,7 @@ export function CaseStudies() {
             What the work looks like.
           </h1>
           <p className="mt-[20px] max-w-[640px] text-[15px] leading-[1.8] text-ink/70">
-            Magnolia Loop is new, so rather than publish results I do not yet have, here are common
+            MagnoliaLoop is new, so rather than publish results I do not yet have, here are common
             situations in relationship-driven businesses — and how I would approach each one. Real case
             studies will appear here as founding engagements produce measured results.
           </p>

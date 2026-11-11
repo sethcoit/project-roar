@@ -67,7 +67,7 @@ export function SiteHeader({ onSubpage = false }: SiteHeaderProps) {
           <a href="#top" className="flex items-center gap-[13px]">
             <img
               src="/MagnoliaLoopLogo-transparent.png"
-              alt="Magnolia Loop"
+              alt="MagnoliaLoop"
               className="h-[52px] w-auto transition-all duration-300 hover:scale-[1.03]"
             />
           </a>

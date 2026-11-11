@@ -3,34 +3,34 @@ import type { Route } from '@/hooks/useRoute';
 
 const metadata: Record<string, { title: string; description: string }> = {
   home: {
-    title: 'Clienteling Consulting & Revenue Audits | Magnolia Loop',
+    title: 'Clienteling Consulting & Revenue Audits | MagnoliaLoop',
     description:
       'Founder-led clienteling for luxury and relationship-driven businesses. A fixed-price audit finds the revenue already in your client book.'
   },
   'case-studies': {
-    title: 'Example Engagements — Magnolia Loop',
+    title: 'Example Engagements — MagnoliaLoop',
     description:
-      'Three common clienteling situations in luxury retail — dormant clients, VIP knowledge held by individual associates, and boutiques without a system — and how Magnolia Loop approaches each one.',
+      'Three common clienteling situations in luxury retail — dormant clients, VIP knowledge held by individual associates, and boutiques without a system — and how MagnoliaLoop approaches each one.',
   },
   'legal-terms': {
-    title: 'Terms of Service — Magnolia Loop',
+    title: 'Terms of Service — MagnoliaLoop',
     description:
-      'The terms that govern use of the Magnolia Loop website and our client relationship revenue consulting services.',
+      'The terms that govern use of the MagnoliaLoop website and our client relationship revenue consulting services.',
   },
   'legal-privacy': {
-    title: 'Privacy Policy — Magnolia Loop',
+    title: 'Privacy Policy — MagnoliaLoop',
     description:
-      'How Magnolia Loop collects, uses, and protects your personal information when you contact us or engage our consulting services.',
+      'How MagnoliaLoop collects, uses, and protects your personal information when you contact us or engage our consulting services.',
   },
   'legal-accessibility': {
-    title: 'Accessibility Statement — Magnolia Loop',
+    title: 'Accessibility Statement — MagnoliaLoop',
     description:
-      'Magnolia Loop is committed to making our website accessible to everyone, including individuals with disabilities.',
+      'MagnoliaLoop is committed to making our website accessible to everyone, including individuals with disabilities.',
   },
   'legal-cookies': {
-    title: 'Cookie Policy — Magnolia Loop',
+    title: 'Cookie Policy — MagnoliaLoop',
     description:
-      'How Magnolia Loop uses cookies and similar technologies on our website.',
+      'How MagnoliaLoop uses cookies and similar technologies on our website.',
   },
 };
 

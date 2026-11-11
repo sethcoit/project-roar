@@ -20,7 +20,7 @@ export function Method() {
           <div>
             <div className="flex items-center gap-3 text-[12px] font-bold uppercase tracking-eyebrow text-brass">
               <span className="h-px w-8 bg-current" />
-              The Magnolia Loop Method™
+              The MagnoliaLoop Method™
             </div>
             <h2 className="mt-[22px] font-serif text-[clamp(48px,6.2vw,88px)] leading-[0.96] tracking-[-0.04em]">
               Relationships compound.

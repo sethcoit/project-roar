@@ -49,8 +49,8 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-[40px] md:flex-row md:items-start">
           <div className="flex flex-col gap-[18px]">
             <span className="flex items-center gap-2">
-              <img src="/MagnoliaLoopLogo.png" alt="Magnolia Loop" className="h-[28px] w-auto" />
-              Magnolia Loop
+              <img src="/MagnoliaLoopLogo.png" alt="MagnoliaLoop" className="h-[28px] w-auto" />
+              MagnoliaLoop
             </span>
             <span className="text-[12px] normal-case tracking-normal text-bone/65">
               Where Client Relationships Become Revenue
@@ -106,7 +106,7 @@ export function Footer() {
 
         <div className="mt-[36px] flex flex-col items-start justify-between gap-[20px] border-t border-bone/10 pt-[24px] sm:flex-row sm:items-center">
           <span className="text-[12px] uppercase tracking-nav text-bone/65">
-            © 2026 Magnolia Loop. All rights reserved.
+            © 2026 MagnoliaLoop. All rights reserved.
           </span>
           <div className="flex items-center gap-[14px]">
             {socials.map((s) => {

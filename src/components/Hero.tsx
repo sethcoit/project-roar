@@ -39,7 +39,7 @@ export function Hero() {
         <div className="border-l-2 border-brass/60 pl-[25px]">
           <div className="mb-[28px] border-y border-bone/15 py-[16px]">
             <div className="flex items-center justify-between text-[12px] font-bold uppercase tracking-eyebrow text-brass">
-              <span>The Magnolia Loop</span>
+              <span>The MagnoliaLoop</span>
               <span className="text-bone/60">Est. 2025</span>
             </div>
             <p className="mt-[10px] max-w-[250px] font-serif text-[20px] leading-[1.1] text-bone">

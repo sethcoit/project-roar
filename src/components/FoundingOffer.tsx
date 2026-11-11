@@ -35,7 +35,7 @@ export function FoundingOffer() {
 
             <div className="mt-[38px] max-w-[680px] space-y-[20px] text-[15px] leading-[1.85] text-ink/75">
               <p>
-                Magnolia Loop is new, and I would rather tell you that plainly than pretend otherwise. I am
+                MagnoliaLoop is new, and I would rather tell you that plainly than pretend otherwise. I am
                 looking for a small number of relationship-driven businesses to work with closely as the
                 method's first clients.
               </p>

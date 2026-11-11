@@ -27,6 +27,25 @@ export function AboutFounder() {
             I built MagnoliaLoop from the sales floor.
           </h2>
 
+          <div className="mt-[30px] grid max-w-[700px] grid-cols-1 gap-5 border-y border-ink/12 py-[22px] sm:grid-cols-2 sm:gap-8">
+            <div>
+              <div className="text-[11px] font-bold uppercase tracking-nav text-green">
+                Luxury clienteling experience
+              </div>
+              <p className="mt-2 font-serif text-[22px] leading-tight text-ink">
+                Hermès + Indochino
+              </p>
+            </div>
+            <div>
+              <div className="text-[11px] font-bold uppercase tracking-nav text-green">
+                Founder-led, personally delivered
+              </div>
+              <p className="mt-2 text-[14px] leading-[1.6] text-ink/70">
+                You work directly with Seth throughout the engagement.
+              </p>
+            </div>
+          </div>
+
           <div className="mt-[38px] max-w-[700px] space-y-[22px] text-[15px] leading-[1.85] text-ink/75">
             <p>
               I&apos;m Seth Coit. Before MagnoliaLoop, I worked in luxury client relations and sales

@@ -5,6 +5,9 @@ export const foundingOffer = {
   spotsRemaining: 2,
   standardPrice: '$995',
   foundingPrice: '$495',
+  fractionalFoundingPrice: '$1,200',
+  fractionalRateLockMonths: 12,
+  fractionalInitialTermMonths: 3,
 };
 
 export const foundingSpotsOpen = foundingOffer.spotsRemaining > 0;

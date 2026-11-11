@@ -40,7 +40,7 @@ export function Hero() {
           <div className="mb-[28px] border-y border-bone/15 py-[16px]">
             <div className="flex items-center justify-between text-[12px] font-bold uppercase tracking-eyebrow text-brass">
               <span>The MagnoliaLoop</span>
-              <span className="text-bone/60">Est. 2025</span>
+              <span className="text-bone/60">Est. 2026</span>
             </div>
             <p className="mt-[10px] max-w-[250px] font-serif text-[20px] leading-[1.1] text-bone">
               Make every relationship worth more.
@@ -81,7 +81,7 @@ export function Hero() {
               className="h-[52px] w-[52px] rounded-full border border-brass/50 object-cover object-top"
             />
             <span>
-              <span className="block text-[14px] text-bone transition-colors group-hover:text-brass">
+              <span className="mt-[3px] block text-[11px] font-bold uppercase tracking-nav text-bone/55 transition-colors group-hover:text-brass">
                 Led personally by Seth Coit
               </span>
               <span className="mt-[3px] block text-[11px] font-bold uppercase tracking-nav text-bone/55">

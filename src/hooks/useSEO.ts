@@ -8,7 +8,7 @@ const metadata: Record<string, { title: string; description: string }> = {
       'Founder-led clienteling for luxury and relationship-driven businesses. A fixed-price audit finds the revenue already in your client book.'
   },
   'case-studies': {
-    title: 'Example Engagements — MagnoliaLoop',
+    title: 'How I’d Approach Common Clienteling Challenges — MagnoliaLoop',
     description:
       'Three common clienteling situations in luxury retail — dormant clients, VIP knowledge held by individual associates, and boutiques without a system — and how MagnoliaLoop approaches each one.',
   },

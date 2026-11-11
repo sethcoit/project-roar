@@ -158,7 +158,7 @@ const examples = [
       'A guest and member preference profile standard',
       'Early-warning indicators for lapsing members',
       'Pre-arrival and pre-renewal touchpoints',
-      'A VIP recognition playbook for staff',
+      'A staff VIP recognition framework',
     ],
     measures: [
       'Return stays and renewal rate',
@@ -222,7 +222,7 @@ export function CaseStudies() {
             Example Engagements
           </div>
           <h1 className="mt-[22px] font-serif text-[clamp(48px,6.2vw,88px)] leading-[0.96] tracking-[-0.04em]">
-            What the work looks like.
+            How I’d approach common clienteling challenges.
           </h1>
           <p className="mt-[20px] max-w-[640px] text-[15px] leading-[1.8] text-ink/70">
             MagnoliaLoop is new, so rather than publish results I do not yet have, here are common

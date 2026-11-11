@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Mail, Linkedin } from 'lucide-react';
-import { NewsletterSignup } from '@/components/NewsletterSignup';
 
 const siteLinks = [
   { label: 'Example Engagements', hash: '#/case-studies' },
@@ -75,13 +74,6 @@ export function Footer() {
                 hello@magnolia-loop.com
               </span>
             </a>
-          </div>
-
-          <div className="flex flex-col gap-[14px] md:max-w-[320px]">
-            <span className="text-[12px] normal-case tracking-normal text-bone/65">
-              Get the Dormant Revenue Playbook — quarterly clienteling insights.
-            </span>
-            <NewsletterSignup source="Footer" variant="inline" />
           </div>
 
           <nav aria-label="Site links">

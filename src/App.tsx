@@ -13,7 +13,6 @@ import { Path } from '@/components/Path';
 import { AboutFounder } from '@/components/AboutFounder';
 import { Industries } from '@/components/Industries';
 import { FinalCTA } from '@/components/FinalCTA';
-import { NewsletterSignup } from '@/components/NewsletterSignup';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
 import { StickyCTA } from '@/components/StickyCTA';
@@ -50,7 +49,6 @@ function App() {
             <Path />
             <Industries />
             <FAQ />
-            <NewsletterSignup />
             <FinalCTA />
           </>
         )}

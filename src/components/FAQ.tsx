@@ -12,8 +12,8 @@ const faqs = [
     a: 'For the audit, I need whatever client data you can provide — even if it is messy or incomplete. Common sources include your POS or CRM export, a client list with purchase history, and any notes your team keeps on key clients. If your data is fragmented, that is exactly what I help you identify and fix. You do not need a polished database to begin.',
   },
   {
-    q: 'Is the fractional director engagement month-to-month?',
-    a: 'Yes. The fractional Clienteling Director engagement runs on a month-to-month basis with no long-term contract. I recommend a minimum of three months to see meaningful results, but you can adjust scope or pause with 30 days notice. Pricing scales with the depth of involvement — from monthly performance reviews at the entry level to weekly strategic leadership at the higher end.',
+    q: 'What is the founding rate for the fractional director?',
+    a: 'If you continue after your audit, the founding rate is $1,200 per month, fixed for your first 12 months. The initial engagement is three months, with scope agreed before work begins.',
   },
   {
     q: 'What industries do you work with?',

@@ -7,7 +7,7 @@ const youReceive = [
   'Founding pricing on the audit',
   'A 30-day implementation check-in after delivery',
   'Direct access to me throughout the engagement',
-  'Founding rate locked in if you continue with the fractional director',
+  `Continue after your audit at a founding rate of ${offer.fractionalFoundingPrice}/month, fixed for your first ${offer.fractionalRateLockMonths} months. Initial ${offer.fractionalInitialTermMonths}-month engagement; scope agreed before work begins.`,
 ];
 
 const iAsk = [

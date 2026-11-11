@@ -1,5 +1,6 @@
 import { Check } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
+import { foundingOffer } from '@/lib/foundingOffer';
 
 const features = [
   'Monthly performance reviews',
@@ -42,6 +43,12 @@ export function Fractional() {
           <div className="text-[12px] font-bold uppercase tracking-nav text-brass">Starting at</div>
           <div className="my-[10px] font-serif text-[58px] leading-none">
             $1,500<span className="text-[24px]">/mo</span>
+          </div>
+          <div className="mb-[22px] border-t border-bone/12 pt-[18px] text-[13px] leading-[1.7] text-bone/75">
+            <span className="font-bold text-brass">Founding client rate after your audit:</span>{' '}
+            {foundingOffer.fractionalFoundingPrice}/month, fixed for your first{' '}
+            {foundingOffer.fractionalRateLockMonths} months. Initial{' '}
+            {foundingOffer.fractionalInitialTermMonths}-month engagement; scope agreed before work begins.
           </div>
           {features.map((feature) => (
             <div

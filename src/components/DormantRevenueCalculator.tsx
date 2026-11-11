@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useModal } from '@/context/ModalContext';
+import { supabase } from '@/lib/supabase';
 
 const currency = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
 const count = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
@@ -15,10 +16,37 @@ export function DormantRevenueCalculator() {
   const [inactivePct, setInactivePct] = useState(40);
   const [orderValue, setOrderValue] = useState('800');
   const [reactivationPct, setReactivationPct] = useState(5);
+  const [email, setEmail] = useState('');
+  const [followUpConsent, setFollowUpConsent] = useState(false);
+  const [captureStatus, setCaptureStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const dormant = Math.round(toNumber(clients) * (inactivePct / 100));
   const reactivated = Math.round(dormant * (reactivationPct / 100));
   const estimate = reactivated * toNumber(orderValue);
+
+  async function handleFollowUpSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!followUpConsent || captureStatus === 'loading') return;
+
+    setCaptureStatus('loading');
+    const { error } = await supabase.from('calculator_leads').insert({
+      email: email.trim(),
+      client_count: toNumber(clients),
+      inactive_client_percentage: inactivePct,
+      average_order_value: toNumber(orderValue),
+      reactivation_percentage: reactivationPct,
+      estimated_opportunity: estimate,
+      follow_up_consent: followUpConsent,
+    });
+
+    if (error) {
+      setCaptureStatus('error');
+      return;
+    }
+
+    setCaptureStatus('success');
+    setEmail('');
+  }
 
   const inputClass =
     'w-full border-b border-ink/22 bg-transparent pb-[9px] font-serif text-[28px] leading-none tracking-[-0.02em] outline-none transition focus:border-green';
@@ -141,6 +169,49 @@ export function DormantRevenueCalculator() {
             >
               Find the real number →
             </button>
+            {captureStatus === 'success' ? (
+              <p className="mt-[20px] text-[14px] leading-[1.6] text-bone">
+                Thanks. Seth will follow up with you personally about this estimate.
+              </p>
+            ) : (
+              <form onSubmit={handleFollowUpSubmit} className="mt-[24px] border-t border-bone/15 pt-[20px]">
+                <label htmlFor="calculator-follow-up-email" className="block text-[13px] leading-[1.6] text-bone/80">
+                  Want to discuss your estimate? Leave your email and Seth will follow up personally.
+                </label>
+                <input
+                  id="calculator-follow-up-email"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  placeholder="Your email address"
+                  className="mt-[14px] h-[48px] w-full rounded-full border border-bone/20 bg-transparent px-[18px] text-[14px] text-bone placeholder:text-bone/45 focus:border-brass/60 focus:outline-none"
+                />
+                <label className="mt-[14px] flex items-start gap-3 text-[12px] leading-[1.6] text-bone/65">
+                  <input
+                    type="checkbox"
+                    required
+                    checked={followUpConsent}
+                    onChange={(event) => setFollowUpConsent(event.target.checked)}
+                    className="mt-1 accent-[#b7790a]"
+                  />
+                  <span>I agree to be contacted directly about this estimate. This is not a newsletter signup.</span>
+                </label>
+                <button
+                  type="submit"
+                  disabled={captureStatus === 'loading'}
+                  className="mt-[16px] inline-flex min-h-[46px] w-full items-center justify-center rounded-full border border-bone/35 px-[20px] text-[11px] font-bold uppercase tracking-nav text-bone transition hover:bg-bone hover:text-ink disabled:cursor-wait disabled:opacity-60"
+                >
+                  {captureStatus === 'loading' ? 'Sending…' : 'Request personal follow-up'}
+                </button>
+                {captureStatus === 'error' && (
+                  <p role="alert" className="mt-[12px] text-[12px] leading-[1.5] text-red-300">
+                    We couldn’t save your request. Please try again or email hello@magnolia-loop.com.
+                  </p>
+                )}
+              </form>
+            )}
             <p className="mt-[16px] text-[11px] leading-[1.6] text-bone/50">
               An illustrative estimate based only on the numbers you entered — not a forecast or a
               guarantee. Repeat purchases and referrals are not included.
